@@ -1,0 +1,153 @@
+<style>
+    .flex-s1 {
+        display: flex;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    .box li {
+        width: 100px;
+        height: 100px;
+        background-color: #DDD;
+        border: 2px solid #111;
+        margin: 5px;
+        display: table;
+        text-align: center;
+    }
+    .box li a {
+        vertical-align: middle;
+        display: table-cell;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    hr {
+        margin-bottom: 20px;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+    .column {
+        flex-direction: column;
+    }
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .justify-start {
+        justify-content: flex-start;
+    }
+    .justify-end {
+        justify-content: flex-end;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .justify-space-between {
+        justify-content: space-between;
+    }
+
+    /* flex-flow is short hand for flex-direction and flex-wrap */
+</style>
+
+<h1>flex-direction row</h1>
+<hr>
+
+<ul class="flex-s1 box">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>flex-direction row-reverse</h1>
+<hr>
+
+<ul class="flex-s1 box row-reverse">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>flex-direction column</h1>
+<hr>
+
+<ul class="flex-s1 box column">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>flex-direction column-reverse</h1>
+<hr>
+
+<ul class="flex-s1 box column-reverse">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>flex-wrap wrap</h1>
+<hr>
+
+<ul class="flex-s1 box wrap">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">three</a></li>
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>justify-content flex-start</h1>
+<hr>
+
+<ul class="flex-s1 box justify-start">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>justify-content flex-end</h1>
+<hr>
+
+<ul class="flex-s1 box justify-end">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>justify-content center</h1>
+<hr>
+
+<ul class="flex-s1 box justify-center">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h1>justify-content space-between</h1>
+<hr>
+
+<ul class="flex-s1 box justify-space-between">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
