@@ -1,18 +1,29 @@
 <style>
-    .flex-s1 {
+    .flex-s1, .flex-s2 {
         display: flex;
         list-style:none;
         padding:0;
         margin:0;
     }
+    .flex-s2 {
+        background: #454592;
+        height: 190px;
+    }
     .box li {
         width: 100px;
         height: 100px;
         background-color: #DDD;
-        border: 2px solid #111;
-        margin: 5px;
+        border: 1px solid #666;
+        margin-left: 5px;
+        margin-right: 5px;
         display: table;
         text-align: center;
+    }
+    .box li.two {
+        height: 75px;
+    }
+    .box li.three {
+        height: 50px;
     }
     .box li a {
         vertical-align: middle;
@@ -47,11 +58,30 @@
     .justify-space-between {
         justify-content: space-between;
     }
+    .justify-space-around {
+        justify-content: space-around;
+    }
+    .justify-space-evenly {
+        justify-content: space-evenly;
+    }
+    .align-start {
+        align-items: flex-start;
+    }
+    .align-end {
+        align-items: flex-end;
+    }
+    .align-center {
+        align-items: center;
+    }
+    .align-baseline {
+        align-items: baseline;
+    }
 
     /* flex-flow is short hand for flex-direction and flex-wrap */
 </style>
 
-<h1>flex-direction row</h1>
+<h1>Flex Parent Properties</h1>
+<h2>flex-direction row</h2>
 <hr>
 
 <ul class="flex-s1 box">
@@ -60,7 +90,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>flex-direction row-reverse</h1>
+<h2>flex-direction row-reverse</h2>
 <hr>
 
 <ul class="flex-s1 box row-reverse">
@@ -69,7 +99,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>flex-direction column</h1>
+<h2>flex-direction column</h2>
 <hr>
 
 <ul class="flex-s1 box column">
@@ -78,7 +108,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>flex-direction column-reverse</h1>
+<h2>flex-direction column-reverse</h2>
 <hr>
 
 <ul class="flex-s1 box column-reverse">
@@ -87,7 +117,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>flex-wrap wrap</h1>
+<h2>flex-wrap wrap</h2>
 <hr>
 
 <ul class="flex-s1 box wrap">
@@ -116,7 +146,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>justify-content flex-start</h1>
+<h2>justify-content flex-start</h2>
 <hr>
 
 <ul class="flex-s1 box justify-start">
@@ -125,7 +155,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>justify-content flex-end</h1>
+<h2>justify-content flex-end</h2>
 <hr>
 
 <ul class="flex-s1 box justify-end">
@@ -134,7 +164,7 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>justify-content center</h1>
+<h2>justify-content center</h2>
 <hr>
 
 <ul class="flex-s1 box justify-center">
@@ -143,11 +173,77 @@
     <li><a href="">three</a></li>
 </ul>
 
-<h1>justify-content space-between</h1>
+<h2>justify-content space-between</h2>
 <hr>
 
 <ul class="flex-s1 box justify-space-between">
     <li><a href="">one</a></li>
     <li><a href="">two</a></li>
     <li><a href="">three</a></li>
+</ul>
+
+<h2>justify-content space-around</h2>
+<hr>
+
+<ul class="flex-s1 box justify-space-around">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h2>justify-content space-evenly</h2>
+<hr>
+
+<ul class="flex-s1 box justify-space-evenly">
+    <li><a href="">one</a></li>
+    <li><a href="">two</a></li>
+    <li><a href="">three</a></li>
+</ul>
+
+<h2>align-items flex-start</h2>
+<hr>
+
+<ul class="flex-s2 box align-start">
+    <li><a href="">one</a></li>
+    <li class="two"><a href="">two</a></li>
+    <li class="three"><a href="">three</a></li>
+</ul>
+
+<h2>align-items flex-end</h2>
+<hr>
+
+<ul class="flex-s2 box align-end">
+    <li><a href="">one</a></li>
+    <li class="two"><a href="">two</a></li>
+    <li class="three"><a href="">three</a></li>
+</ul>
+
+<h2>align-items center</h2>
+<hr>
+
+<ul class="flex-s2 box align-center">
+    <li><a href="">one</a></li>
+    <li class="two"><a href="">two</a></li>
+    <li class='three'><a href="">three</a></li>
+</ul>
+
+<h2>align-items baseline</h2>
+<hr>
+
+<ul class="flex-s2 box align-baseline">
+    <li><a href="">one</a></li>
+    <li class='two'><a href="">two</a></li>
+    <li class="three"><a href="">three</a></li>
+</ul>
+
+<h1>Flex Item Properties</h1>
+
+
+<h2>align-items baseline</h2>
+<hr>
+
+<ul class="flex-s2 box">
+    <li><a href="">one</a></li>
+    <li class='two'><a href="">two</a></li>
+    <li class="three"><a href="">three</a></li>
 </ul>
